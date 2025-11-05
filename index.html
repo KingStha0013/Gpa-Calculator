@@ -93,12 +93,12 @@
             justify-content: space-between; 
             align-items: center; 
         }
-        
+
         header h1 {
             font-size: 1.5rem; 
             margin: 0;
         }
-        
+
         .header-actions { display: flex; gap: 10px; }
         .card { 
             background-color: var(--card-background); 
@@ -366,7 +366,7 @@
         .toast-danger .toast-icon { color: var(--danger-color); }
         .toast-info { border-left: 5px solid var(--info-color); }
         .toast-info .toast-icon { color: var(--info-color); }
-        
+
         /* --- New Creator Photo Styling --- */
         .creator-info {
             display: flex;
@@ -387,7 +387,7 @@
             border: 4px solid var(--primary-color);
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
         }
-        
+
         .creator-photo {
             width: 100%;
             height: 100%;
@@ -408,7 +408,7 @@
 </head>
 <body class="input-view"> 
     <header>
-        <h1>🇳🇵 NEB GPA Calculator</h1>
+        <h1>🇳🇵 David GPA Calculator</h1>
         <div class="header-actions">
             <button id="aboutAppBtn" aria-label="About the App" class="secondary-btn"><i class="fas fa-info-circle"></i> About</button>
             <button id="darkModeToggle" aria-label="Toggle dark/light mode">
@@ -421,13 +421,13 @@
     <div id="ad-container">
         <!-- The placeholder which will be visible if the ad script is blocked or fails -->
         <span id="ad-placeholder">Advertisement Loading... (If visible, ad is likely blocked or inactive for this domain)</span>
-        
+
         <!-- The original ad script block -->
-        <script type="text/javascript"> 	atOptions = { 		'key' : 'fa002bc06f6ffd45943c2a04fda12fd5', 		'format' : 'iframe', 		'height' : 50, 		'width' : 320, 		'params' : {} 	}; </script>
+        <script type="text/javascript">         atOptions = {                 'key' : 'fa002bc06f6ffd45943c2a04fda12fd5',                 'format' : 'iframe',                 'height' : 50,                 'width' : 320,                 'params' : {}         }; </script>
         <script type="text/javascript" src="//www.highperformanceformat.com/fa002bc06f6ffd45943c2a04fda12fd5/invoke.js"></script>
     </div>
     <!-- END ADVERTISEMENT CONTAINER -->
-    
+
     <main class="container">
         <div id="inputBox">
             <section id="configPanel" class="card">
@@ -531,7 +531,7 @@
             </div>
 
             <div class="other-details">
-                <p><strong>App Details:</strong> This is an open-source tool that uses **Local Storage** to save your subject inputs and last calculated results directly in your browser.</p>
+                <p><strong>App Details:</strong> In this app you can  set your custom full marks(100,75,50).This is free source app.</p>
                 <p><strong>Creator's Link:</strong> <a href="https://i.imgur.com/2e3bXw0.png" target="_blank">View Creator's Photo/Details</a></p>
             </div>
         </div>
@@ -1314,7 +1314,7 @@
                         && child !== adPlaceholder 
                         && child.tagName !== 'SCRIPT'
                     );
-                    
+
                     if (loadedAd) {
                         adPlaceholder.style.display = 'none'; // Hide placeholder if ad content is detected
                     } else {
