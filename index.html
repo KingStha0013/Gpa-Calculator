@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEB GPA Calculator - KingamerNep</title>
-<size=""<body background=></size>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -94,12 +93,12 @@
             justify-content: space-between; 
             align-items: center; 
         }
-
+        
         header h1 {
             font-size: 1.5rem; 
             margin: 0;
         }
-
+        
         .header-actions { display: flex; gap: 10px; }
         .card { 
             background-color: var(--card-background); 
@@ -367,7 +366,7 @@
         .toast-danger .toast-icon { color: var(--danger-color); }
         .toast-info { border-left: 5px solid var(--info-color); }
         .toast-info .toast-icon { color: var(--info-color); }
-
+        
         /* --- New Creator Photo Styling --- */
         .creator-info {
             display: flex;
@@ -388,7 +387,7 @@
             border: 4px solid var(--primary-color);
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
         }
-
+        
         .creator-photo {
             width: 100%;
             height: 100%;
@@ -409,7 +408,7 @@
 </head>
 <body class="input-view"> 
     <header>
-        <font color="red"><h1>🇳🇵 David GPA Calculator</h1></font>
+        <h1>🇳🇵 NEB GPA Calculator</h1>
         <div class="header-actions">
             <button id="aboutAppBtn" aria-label="About the App" class="secondary-btn"><i class="fas fa-info-circle"></i> About</button>
             <button id="darkModeToggle" aria-label="Toggle dark/light mode">
@@ -418,17 +417,14 @@
         </div>
     </header>
 
-    <!-- ADVERTISEMENT CONTAINER WITH FALLBACK/BORDER IMPROVEMENT -->
-    <div id="ad-container">
-        <!-- The placeholder which will be visible if the ad script is blocked or fails -->
-        <span id="ad-placeholder">Advertisement Loading... (If visible, ad is likely blocked or inactive for this domain)</span>
-
-        <!-- The original ad script block -->
-        <script type="text/javascript">         atOptions = {                 'key' : 'fa002bc06f6ffd45943c2a04fda12fd5',                 'format' : 'iframe',                 'height' : 50,                 'width' : 320,                 'params' : {}         }; </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/fa002bc06f6ffd45943c2a04fda12fd5/invoke.js"></script>
-    </div>
+<!-- ADVERTISEMENT CONTAINER WITH FALLBACK/BORDER IMPROVEMENT -->
+    <footer><div id="ad-container">
+           <!-- The original ad script block -->
+        <script type="text/javascript"> 	atOptions = { 		'key' : 'ee84971bb2fe5ce922bf0508d0d51aeb', 		'format' : 'iframe', 		'height' : 50, 		'width' : 300, 		'params' : {} 	}; </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/ee84971bb2fe5ce922bf0508d0d51aeb/invoke.js"></script>
+    </div></footer>
     <!-- END ADVERTISEMENT CONTAINER -->
-
+    
     <main class="container">
         <div id="inputBox">
             <section id="configPanel" class="card">
@@ -512,6 +508,7 @@
                 <button id="exportPdfBtn" class="secondary-btn"><i class="fas fa-file-pdf"></i> Export PDF</button>
                 <button id="exportCsvBtn" class="secondary-btn"><i class="fas fa-file-csv"></i> Export CSV</button>
                 <button id="resetBtn" class="danger-btn"><i class="fas fa-undo"></i> Reset All</button>
+
             </div>
         </section>
     </main>
@@ -519,7 +516,7 @@
     <div id="aboutModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h2>About David GPA Calculator</h2>
+            <h2>About NEB GPA Calculator</h2>
 
             <div class="creator-info">
                 <div class="creator-photo-container">
@@ -527,23 +524,21 @@
                          onerror="this.onerror=null; this.classList.add('hidden'); document.querySelector('#aboutModal .creator-icon').classList.remove('hidden');">
                     <i class="fas fa-user-circle creator-icon" style="display: none;"></i>
                 </div>
-               <h3 class="creator-name">David Shrestha</h3>
-                <p class="app-description">This application is specifically designed and optimized for mobile devices to ensure the best user experience and smooth performance across all screen sizes.</p>
+                <h3 class="creator-name">David Shrestha</h3>
+                <p class="app-description">This application is a GPA calculator designed for students under the Nepali National Examinations Board (NEB) system.</p>
             </div>
 
             <div class="other-details">
-                <font color="red"<p><strong>App Details:</strong></font> In this app you can set your custom full marks(100,75,50)</p>
-<font color="red"<p><h3>Disclaimer</h3></p>
-<p>1.You can change your full marks system easily.</p>
-<p>2.You need to enter your guesses marks.</p>
-<p>3.After enter needed things,then click to calculate gpa button.</p>
-            <p style="text-align:center;">
-  <font color="red"><strong>Creator's Photo:</strong></font><br>
-  <a href="https://i.imgur.com/2e3bXw0.png" target="_blank">
-    <img src="https://i.imgur.com/2e3bXw0.png" alt="Creator's Photo" style="width:90%;max-width:350px;border-radius:12px;">
-  </a>
-</p>
+                <p><strong>App Details:</strong> This is an open-source tool that uses **Local Storage** to save your subject inputs and last calculated results directly in your browser.</p>
+                <p><strong>Creator's Link:</strong> <a href="https://i.imgur.com/2e3bXw0.png" target="_blank">View Creator's Photo/Details</a></p>
             </div>
+<!-- ADVERTISEMENT CONTAINER WITH FALLBACK/BORDER IMPROVEMENT -->
+    <footer><div id="ad-container">
+           <!-- The original ad script block -->
+        <script type="text/javascript"> 	atOptions = { 		'key' : 'ee84971bb2fe5ce922bf0508d0d51aeb', 		'format' : 'iframe', 		'height' : 50, 		'width' : 300, 		'params' : {} 	}; </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/ee84971bb2fe5ce922bf0508d0d51aeb/invoke.js"></script>
+    </div></footer>
+    <!-- END ADVERTISEMENT CONTAINER -->
         </div>
     </div>
 
@@ -561,7 +556,7 @@
     <div id="toastContainer"></div>
 
     <footer>
-        <font color="green"<p>&copy; 2025 David Shrestha| Made by KingamerNep</p></font>
+        <p>&copy; 2025 David Shrestha| Made with ❤️ by KingamerNep</p>
     </footer>
 
     <script>
@@ -1324,7 +1319,7 @@
                         && child !== adPlaceholder 
                         && child.tagName !== 'SCRIPT'
                     );
-
+                    
                     if (loadedAd) {
                         adPlaceholder.style.display = 'none'; // Hide placeholder if ad content is detected
                     } else {
